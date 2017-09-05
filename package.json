@@ -1,0 +1,93 @@
+{
+  "name": "transform-svg-to-native",
+  "version": "0.1.0",
+  "description": "A tool to convert SVGs to react-native-svg compatible SVGs.",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "bin": {
+    "svg-to-native": "./src/cli.js"
+  },
+  "scripts": {
+    "nsp": "nsp check",
+    "pretest": "npm run nsp && standard --env jest",
+    "test": "jest",
+    "format": "prettier-standard '**/*.js'",
+    "precommit": "lint-staged",
+    "compile": "babel src/ -d dist/ && npm run format",
+    "push-tags": "git push --follow-tags origin master",
+    "release": "npm run compile; npm test; standard-version; npm run push-tags",
+    "prepublishOnly": "npm run release"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run compile",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:ritz078/native-svg-cli.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Ritesh Kumar",
+    "email": "rkritesh078@gmail.com",
+    "website": "riteshkr.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ritz078/native-svg-cli/issues"
+  },
+  "homepage": "https://github.com/ritz078/native-svg-cli",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^20.0.3",
+    "babel-preset-env": "^1.6.0",
+    "cz-conventional-changelog": "^2.0.0",
+    "husky": "^0.14.3",
+    "jest": "^20.0.4",
+    "lint-staged": "^4.0.3",
+    "nsp": "^2.7.0",
+    "prettier-standard": "^6.0.0",
+    "regenerator-runtime": "^0.10.5",
+    "standard": "^10.0.3",
+    "standard-version": "^4.2.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": true
+          }
+        }
+      ]
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "@tsuyoshiwada/htmltojsx": "^0.0.4",
+    "all-contributors-cli": "^4.4.0",
+    "babel-plugin-react": "^1.0.0",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "colors": "^1.1.2",
+    "file-name": "^0.1.0",
+    "fs-extra": "^4.0.1",
+    "globby": "^6.1.0",
+    "is-capitalized": "^1.0.0",
+    "js-beautify": "^1.6.14",
+    "lodash": "^4.17.4",
+    "prettier": "^1.6.1",
+    "prettydiff": "^99.0.1",
+    "svgo": "^0.7.2"
+  }
+}
