@@ -86,7 +86,6 @@
     "is-capitalized": "^1.0.0",
     "js-beautify": "^1.6.14",
     "lodash": "^4.17.4",
-    "prettier": "^1.6.1",
     "prettydiff": "^99.0.1",
     "svgo": "^0.7.2"
   }

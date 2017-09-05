@@ -13,7 +13,6 @@ const {
 const { transform } = require('babel-core')
 const isCapitalized = require('is-capitalized')
 const HTMLtoJSX = require('@tsuyoshiwada/htmltojsx')
-const prettier = require('prettier')
 
 const converter = new HTMLtoJSX({
   createClass: false
@@ -49,13 +48,13 @@ function plugin ({ types: t }) {
 }
 
 function template (id, code) {
-  return prettier.format(`
-  import {${importMapping[id].join(', ')}} from 'react-native-svg'
-  
-  export default function () {
-    return ${code}
-  }
-`)
+  return `
+import {${importMapping[id].join(', ')}} from 'react-native-svg'
+
+export default function () {
+  return ${code}
+}
+`
 }
 
 function convertSvgString (svg, fileName, cb) {
