@@ -1,5 +1,6 @@
-# transform-svg-to-native [![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# transform-svg-to-native 
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+
 > A tool to convert SVGs to react-native-svg compatible SVGs.
 
 ## Installation
@@ -62,7 +63,7 @@ MIT © [Ritesh Kumar](riteshkr.com)
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-| [<img src="https://avatars3.githubusercontent.com/u/5389035?v=4" width="100px;"/><br /><sub>Ritesh Kumar</sub>](http://riteshkr.com)<br />[💻](https://github.com/Ritesh Kumar/transform-svg-to-native/commits?author=ritz078 "Code") |
+| [<img src="https://avatars3.githubusercontent.com/u/5389035?v=4" width="100px;"/><br /><sub>Ritesh Kumar</sub>](http://riteshkr.com)<br />[💻](https://github.com/transform-it/transform-svg-to-native/commits?author=ritz078 "Code") |
 | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
