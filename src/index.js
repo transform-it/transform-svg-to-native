@@ -1,15 +1,5 @@
-const globby = require('globby')
-const fs = require('fs-extra')
-const getFileName = require('file-name')
 const svgo = require('./svgo')
-const {
-  camelCase,
-  capitalize,
-  isEmpty,
-  isArray,
-  isString,
-  isFunction
-} = require('lodash')
+const { capitalize, isEmpty, isArray, isString, isFunction } = require('lodash')
 const { transform } = require('babel-core')
 const isCapitalized = require('is-capitalized')
 const HTMLtoJSX = require('@tsuyoshiwada/htmltojsx')
@@ -83,31 +73,4 @@ function convertSvgString (svg, fileName, cb) {
   })
 }
 
-function getSvgContent (filePath, outDir, fileExtension, cb) {
-  const fileName = camelCase(getFileName(filePath))
-
-  const content = fs.readFileSync(filePath, {
-    encoding: 'utf8'
-  })
-
-  convertSvgString(content, fileName, code => {
-    fs.outputFile(`${outDir}/${fileName}.${fileExtension}`, code)
-  })
-}
-
-function convertSvgFiles (
-  pattern = '*.svg',
-  outDir = './out',
-  fileExtension = 'jsx'
-) {
-  globby(pattern).then(paths => {
-    paths.forEach(p => {
-      getSvgContent(p, outDir, fileExtension)
-    })
-  })
-}
-
-module.exports = {
-  convertSvgFiles,
-  convertSvgString
-}
+module.exports = convertSvgString

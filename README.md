@@ -10,7 +10,7 @@ npm i transform-svg-to-native
 It takes a basic svg and returns a code that can be used with [react-native-svg](https://github.com/react-native-community/react-native-svg)
 
 ```js
-import { convertSvgString } from "transform-svg-to-native"
+import convertSvgString from "transform-svg-to-native"
 
 const svg = `
 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
