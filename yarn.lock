@@ -3831,7 +3831,7 @@ prettier-standard@^6.0.0:
     prettier-eslint "^6.3.0"
     rxjs "^5.4.0"
 
-prettier@^1.4.4, prettier@^1.6.0:
+prettier@^1.4.4, prettier@^1.6.0, prettier@^1.6.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.6.1.tgz#850f411a3116226193e32ea5acfc21c0f9a76d7d"
 

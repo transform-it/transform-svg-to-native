@@ -6,6 +6,7 @@ const globby = require('globby')
 const fs = require('fs-extra')
 const { camelCase } = require('lodash')
 const getFileName = require('file-name')
+const prettier = require('prettier')
 const convertSvgString = require('./index')
 
 const cli = meow(`
@@ -21,7 +22,10 @@ function getSvgContent (filePath, outDir, fileExtension, cb) {
   })
 
   convertSvgString(content, fileName, code => {
-    fs.outputFile(`${outDir}/${fileName}.${fileExtension}`, code)
+    fs.outputFile(
+      `${outDir}/${fileName}.${fileExtension}`,
+      prettier.format(code)
+    )
   })
 }
 

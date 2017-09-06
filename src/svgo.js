@@ -6,7 +6,6 @@ const pluginsData = [
   'convertColors',
   'collapseGroups',
   'convertPathData',
-  'convertShapeToPath',
   'mergePaths',
   'removeDimensions',
   'removeDesc',
@@ -17,11 +16,13 @@ const pluginsData = [
   'removeEmptyText',
   'removeHiddenElems',
   'removeMetadata',
-  'removeTitle',
   'removeUselessDefs',
   'removeUselessStrokeAndFill',
   'removeXMLProcInst',
-  { removeXMLNS: { active: true } }
+  { removeTitle: { active: false } },
+  { removeStyleElement: { active: true } },
+  { removeXMLNS: { active: true } },
+  { removeViewBox: { active: true } }
 ]
 
 module.exports = new SVGO({
