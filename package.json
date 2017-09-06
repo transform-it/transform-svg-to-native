@@ -1,6 +1,6 @@
 {
   "name": "transform-svg-to-native",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A tool to convert SVGs to react-native-svg compatible SVGs.",
   "main": "dist/index.js",
   "files": [
