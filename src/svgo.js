@@ -10,6 +10,7 @@ const pluginsData = [
   'removeDimensions',
   'removeDesc',
   'removeDoctype',
+  'removeComments',
   'removeEditorsNSData',
   'removeEmptyAttrs',
   'removeEmptyContainers',
