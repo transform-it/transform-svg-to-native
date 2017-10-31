@@ -4,7 +4,9 @@
 > A tool to convert SVGs to react-native-svg compatible SVGs.
 
 ## Installation
-npm i transform-svg-to-native
+```
+npm install transform-svg-to-native
+```
 
 ## Usage
 It takes a basic svg and returns a code that can be used with [react-native-svg](https://github.com/react-native-community/react-native-svg)
