@@ -1,4 +1,6 @@
 # transform-svg-to-native 
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/transform-it/transform-svg-to-native.svg)](https://greenkeeper.io/)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 > A tool to convert SVGs to react-native-svg compatible SVGs.
