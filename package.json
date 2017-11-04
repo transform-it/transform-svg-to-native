@@ -45,15 +45,15 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
-    "babel-jest": "^20.0.3",
+    "babel-jest": "^21.2.0",
     "babel-preset-env": "^1.6.0",
     "cz-conventional-changelog": "^2.0.0",
     "husky": "^0.14.3",
-    "jest": "^20.0.4",
+    "jest": "^21.2.1",
     "lint-staged": "^4.0.3",
     "nsp": "^2.7.0",
-    "prettier-standard": "^6.0.0",
-    "regenerator-runtime": "^0.10.5",
+    "prettier-standard": "^7.0.3",
+    "regenerator-runtime": "^0.11.0",
     "standard": "^10.0.3",
     "standard-version": "^4.2.0"
   },
@@ -75,7 +75,7 @@
     }
   },
   "dependencies": {
-    "@tsuyoshiwada/htmltojsx": "^0.0.4",
+    "@tsuyoshiwada/htmltojsx": "^0.0.5",
     "all-contributors-cli": "^4.4.0",
     "babel-plugin-react": "^1.0.0",
     "babel-plugin-syntax-jsx": "^6.18.0",
@@ -88,6 +88,6 @@
     "lodash": "^4.17.4",
     "prettier": "^1.6.1",
     "prettydiff": "^99.0.1",
-    "svgo": "^0.7.2"
+    "svgo": "^1.0.2"
   }
 }
